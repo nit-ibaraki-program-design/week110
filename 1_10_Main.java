@@ -55,7 +55,7 @@ class Pd10test {
     public static void main(String[] args) {
         //インスタンスを作成する
         Base b1 = new Base();
-        Base b2 = new Positive();
+        Base b2 = new Counter();
         //showNumの動作確認
         System.out.println("--- b1 ---");
         b1.showNum();
@@ -67,6 +67,9 @@ class Pd10test {
         b2.showNum();
         System.out.println("--- 負の値の場合 ---");
         b2.setNum(-3);
+        b2.showNum();
+        System.out.println("--- 0の場合 ---");
+        b2.setNum(0);
         b2.showNum();
     }
 }
